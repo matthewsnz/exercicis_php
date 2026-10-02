@@ -79,15 +79,28 @@ echo "Palabras utilitzades a srt: " . str_word_count($str) . "<br>";
 
 // Exercici 2: busca en php.net la funcio:
 // levenshtein() y pon un ejemplo
+
 echo "levenshtein — Calcula la distancia Levenshtein entre dos strings <br><br>";
+
+$str1 = "Hola";
+$str2 = "HolaaaLohdaw";
+
+$leven = levenshtein($str1, $str2);
+echo $leven;
 
 
 // Exercici 3: busca que es el operador ternario y
 // pon un ejemplo
 
-echo "El operador ternario en PHP es una forma rápida y corta de escribir una estructura condicional if-else en una sola línea";
+echo "<br><br>El operador ternario en PHP es una forma rápida y corta de escribir una estructura condicional if-else en una sola línea <br><br>";
+
+$edat = 18;
+$msj = ($edat >= 18) ? "Major d'edat" : "Menor d'edat";
+echo $msj; 
+
 
 // Exercici 4: Explicar que hace esta funcion:
+
 function funcionMultipleReturns($v1,$v2,$v3){
   $v1 = "variable 1";
   $v2 = "variable 2";
@@ -95,6 +108,8 @@ function funcionMultipleReturns($v1,$v2,$v3){
 
   return array($v1, $v2, $v3);
 }
+
+  // Coge los valores de $v1 $v2 $v3 y cambia el valor.
 
 // Exercici 5: Crear una funcion comprova_email(...) que reciba una cadena decaracteres 
 // como parametro que contiene un email y hace las siguientes comprobaciones:
@@ -104,5 +119,9 @@ function funcionMultipleReturns($v1,$v2,$v3){
 // - Comprobar si tiene el caracter @
 // - Contar el numero de caracteres
 
-// FALTA
+$correo = "masala@jviladoms.cat";
+
+function comprova_email($correo){
+  
+}
 ?>
