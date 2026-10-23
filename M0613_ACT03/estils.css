@@ -1,10 +1,156 @@
-body{
-  font-family:Calibri;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f4f9;
+    color: #263248;
+    margin: 0;
+    padding: 30px 15px;
 }
 
+#creacion {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #dce2ed;
+}
 
-#creacion{
-  width: 100px;
-  padding: 10px;
-  margin: 10px auto;
+h1, h2 {
+    text-align: center;
+    color: #635bdb;
+}
+
+header {
+    text-align: center;
+    background-color: #635bdb;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+fieldset {
+    border: 1px solid #d5dbea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #635bdb;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d5dbea;
+    border-radius: 6px;
+    background-color: #fafbfe;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #635bdb;
+}
+
+.grup {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+label.linia {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #635bdb;
+}
+
+button,
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #635bdb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #4941b5;
+}
+
+/* Taula del resum */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #d5dbea;
+    text-align: left;
+}
+
+th {
+    background-color: #635bdb;
+    color: white;
+}
+
+tr:nth-child(even) td {
+    background-color: #f4f7f7;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #8490a5;
+    font-size: 13px;
+}
+
+@media (max-width: 500px) {
+    #creacion {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
 }
