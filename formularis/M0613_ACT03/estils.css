@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f8;
+    color: #263238;
+}
+
+header {
+    background: #203a5b;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+.marca {
+    margin: 0;
+    color: #8ee3d0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 760px;
+    margin: 28px auto;
+}
+
+form, .targeta, .avis {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #00000012;
+}
+
+fieldset {
+    border: 1px solid #d9e0e8;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #203a5b;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5df;
+    border-radius: 6px;
+    background: #fff;
+    font: inherit;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #8ee3d0;
+    border-color: #203a5b;
+}
+
+.pregunta {
+    margin: 18px 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+label.linia {
+    display: block;
+    margin: 10px 0;
+}
+
+label.linia input {
+    margin-right: 7px;
+}
+
+button {
+    width: 100%;
+    border: 0;
+    border-radius: 7px;
+    padding: 13px;
+    background: #167d75;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #105e58;
+}
+
+.resultat {
+    max-width: 850px;
+}
+
+h2 {
+    color: #203a5b;
+    margin-top: 0;
+}
+
+.avis {
+    border-left: 5px solid #d45b5b;
+}
+
+.avis li {
+    margin: 8px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #d9e0e8;
+    padding: 10px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+table tr:first-child th {
+    background: #203a5b;
+    color: white;
+}
+
+tr:nth-child(even) td,
+tr:nth-child(even) th {
+    background: #f1f5f7;
+}
+
+.enllac {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background: #e0f4f0;
+    color: #174e49;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enllac:hover {
+    background: #c8e9e3;
+}
+
+footer {
+    text-align: center;
+    color: #697887;
+    padding: 15px;
+    font-size: 13px;
+}
