@@ -1,5 +1,4 @@
 <?php
-// funcions.php - Funcions reutilitzables de la botiga
 
 /**
  * Neteja un camp de $_POST: treu espais i retorna cadena buida si no existeix.
@@ -21,21 +20,16 @@ function camp(string $nom): string
  */
 function comprovaCredencials(string $usuari, string $clau): ?array
 {
-    // Si l'usuari no existeix, tornem null (sense dir quin dels dos ha fallat)
     if (!isset(USUARIS[$usuari])) {
         return null;
     }
-    // password_verify() compara la clau amb el hash; mai es compara amb ===
     if (!password_verify($clau, USUARIS[$usuari]['hash'])) {
         return null;
     }
     return USUARIS[$usuari];
 }
 
-/**
- * Porter de les pàgines privades: si no hi ha sessió, envia a login.php.
- * Ha de cridar-se després de session_start().
- */
+
 function exigeixSessio(): void
 {
     if (!isset($_SESSION['usuari'])) {
